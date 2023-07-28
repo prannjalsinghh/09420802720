@@ -11,7 +11,7 @@ const Trains = () => {
     }, []);
 
     const fetchData = async() =>{
-        const res = await axios.get('http://localhost:3000/api/getTrains');
+        const res = await axios.get('http://localhost:4000/api/getTrains');
         setTrains(res.data);
     }
 
